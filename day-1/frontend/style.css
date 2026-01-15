@@ -1,0 +1,117 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background-color: #0b0e14; 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    z-index: 10; 
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    min-width: 450px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    color: white;
+}
+
+.sub-title {
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #1e3a8a, #3b82f6, #60a5fa);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+.btn {
+    padding: 15px 60px;
+    margin: 5px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background: #5b3789;
+    color: white;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #34084f;
+}
+
+.form {
+    background: rgba(0, 0, 0, 0.4); 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 15px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px; 
+}
+
+.info {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    font-size: 0.9rem;
+    color: #e0e0e0;
+}
+
+.info strong {
+    color: #94a3b8; 
+    font-weight: 500;
+}
+
+.info span {
+    font-family: 'Courier New', Courier, monospace; 
+    color: #ffffff;
+}
+
+.footer {
+    position: fixed;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.8rem;
+    z-index: 2;
+}
+
+/* Start Stars */
+.background-stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+}
+
+.stars {
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: 400px 200px #FFF, 800px 400px #FFF, 1200px 600px #FFF, 200px 800px #FFF, 1600px 200px #FFF;
+    animation: kelap-kelip 3s infinite ease-in-out;
+}
+
+@keyframes kelap-kelip {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 1; }
+} 
+/* End Stars */

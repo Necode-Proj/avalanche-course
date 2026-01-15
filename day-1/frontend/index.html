@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Short-Course</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://cryptologos.cc/avalanche"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- Pattern -->
+    <div class="background-stars">
+      <div class="stars"></div>
+    </div>
+    <!-- End Pattern -->
+
+    <!-- Content -->
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="sub-title">Avalanche dApps</h2>
+          <p class="desc">Connect to Wallet</p>
+
+          <div class="btn-group">
+            <button id="connectBtn" class="btn">Connect Wallet</button>
+            <button id="disconnectBtn" class="btn">Disconnect</button>
+          </div>
+
+          <div class="form">
+            <div class="info">
+              <strong>Status:</strong> <span id="status">Not Connected</span>
+            </div>
+            <div class="info">
+              <strong>Network:</strong> <span id="network">-</span>
+            </div>
+            <div class="info">
+              <strong>Wallet Address:</strong> <span id="address">-</span>
+            </div>
+          </div>
+
+          <p id="error" style="color: #ff4d4d; font-size: 0.8rem; margin-top: 10px"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>© 2026 Arnold Darmawan 241011450317. Made with Passion 🔥</p>
+    </div>
+    <!-- End Content -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
