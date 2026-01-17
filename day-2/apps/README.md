@@ -1,13 +1,21 @@
-# Sample Hardhat Project
+# Day 2 
+Berfokus ke Pembuatan Smart Contract
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+# How to Use?
 
-Try running some of the following tasks:
+## 🔥 Prerequisite
+``` shell
+yarn install 
+touch .env
+```
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.ts
+## 🧘 ENV
+``` shell
+PRIVATE_KEY="<your wallet private key should go here>"
+```
+
+## 🤘 Running
+``` shell
+yarn hardhat compile
+npx hardhat run scripts/deployment.ts --network avalancheFuji
 ```
